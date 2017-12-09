@@ -1,0 +1,28 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+
+
+Entity InstructionDecodingCircuit is 
+
+Port
+( 
+DSTENS: in std_logic;
+SRCEND: in std_logic;
+RSRCEN: in std_logic;
+RDSTEN: in std_logic;
+PLAout: in std_logic;
+
+srcDecoderOutput :out std_logic_vector(3 downto 0);
+dstDecoderOutput :out std_logic_vector(3 downto 0);
+aluDecoderOutput :out std_logic_vector(15 downto 0);
+PLAoutput: out std_logic_vector(7 downto 0);
+
+IRinput: in std_logic_vector(15 downto 0)
+);
+
+end Entity;
+
+Architecture InstructionDecodingCircuitArch of InstructionDecodingCircuit is
+begin
+
+end InstructionDecodingCircuitArch;

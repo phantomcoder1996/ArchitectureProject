@@ -1,0 +1,26 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+
+Entity BranchInstructionDecoder is
+
+Port
+(
+ IRinput: in std_logic_vector(4 downto 0);
+
+ CF: in std_logic;
+ ZF: in std_logic;
+
+ Branch: out std_logic
+
+);
+
+
+
+end Entity;
+
+Architecture BranchInstructionDecoderArch of BranchInstructionDecoder is
+begin
+
+
+end BranchInstructionDecoderArch;
+

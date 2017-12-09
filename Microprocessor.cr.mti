@@ -1,0 +1,97 @@
+C:/Users/Univ/Documents/Architecure1/ProjectCode/PCBlock_TB.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/PCBlock_TB.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity PCBlock_TB
+-- Compiling architecture PCBlock_TBArch of PCBlock_TB
+-- Loading entity PCBlock
+
+} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/mux2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/mux2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Mux2
+-- Compiling architecture Mux2Arch of Mux2
+
+} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/PCBlock.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/PCBlock.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity PCBlock
+-- Compiling architecture PCBlockArch of PCBlock
+-- Loading entity nbitregister
+-- Loading entity tristate
+-- Loading entity Mux2
+-- Loading package NUMERIC_STD
+-- Loading entity PcCalculator
+
+} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/decoder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/decoder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity decoder
+-- Compiling architecture decoderArchitecture of decoder
+
+} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/OurProcessor.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/OurProcessor.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+** Error (suppressible): C:/Users/Univ/Documents/Architecure1/ProjectCode/OurProcessor.vhd(2): (vcom-1491) Empty source files.
+
+} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/counter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/counter.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity counter
+-- Compiling architecture counterArch of counter
+
+} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/tristatebuffer.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/tristatebuffer.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tristate
+-- Compiling architecture tristateArchitecture of tristate
+
+} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/register.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/register.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity nbitregister
+-- Compiling architecture nbitregister_architecture of nbitregister
+
+} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/pccalculator.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/pccalculator.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity PcCalculator
+-- Compiling architecture PcCalculatorArch of PcCalculator
+
+} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/rom.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/rom.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ROM
+-- Compiling architecture ROMArch of ROM
+
+} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/ram.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/ram.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram
+-- Compiling architecture syncrama of ram
+
+} {} {}}
