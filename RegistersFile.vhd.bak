@@ -1,6 +1,14 @@
 Library ieee;
 use ieee.std_logic_1164.all;
 
+--Description
+--------------
+--This block includes all general purpose registers in addition
+--to temp and SP
+-------------------------------------------------------------
+--SrcDecoderOut,DstDecoderOut=>input from instruction decoding circuit 
+--for enabling tristate buffers connected to registers
+-----------------------------------------------------------------
 Entity RegistersFile is
 
 Generic(n:integer:=32);
@@ -28,8 +36,75 @@ Port
 end Entity;
 
 Architecture RegistersFileArch of RegistersFile is
+-----------------------------------------------------------------Components-------------------------------------------------------
+component nbitregister is
+Generic(n: integer:=32);
+Port(d : in std_logic_vector(n-1 downto 0);
+     rst: in std_logic;
+     clk: in std_logic;
+     En: in std_logic;
+    q : out std_logic_vector(n-1 downto 0));
+end component;
+
+component tristate is
+Generic(n:integer :=32);
+Port(input: in std_logic_vector(n-1 downto 0);
+     output: out std_logic_vector(n-1 downto 0);
+     En: in std_logic);
+end component;
+---------------------------------------------------------------------Signals---------------------------------------------------------------
+Signal RoInput,R1Input,R2Input,R3Input,TempInput,SpInput:std_logic_vector( 31 downto 0);
+Signal RoOutput,R1Output,R2Output,R3Output,TempOutput,SpOutput:std_logic_vector( 31 downto 0);
+Signal RoSrcEN,R1SrcEN,R2SrcEN,R3SrcEN:std_logic;
+Signal RoDstEN,R1DstEN,R2DstEN,R3DstEN:std_logic;
+
+
 begin
 
+--TODO:
+--Add all registers and their connections
+---------------------------------------------------------------------------Enable For SRC Register---------------------------------------------
+RoSrcEN<= (not SrcDecoderOut(0)) and (not SrcDecoderOut(1)) and (not SrcDecoderOut(2)); 
+R1SrcEN<= (SrcDecoderOut(0)) and (not SrcDecoderOut(1)) and (not SrcDecoderOut(2)); 
+R2SrcEN<= (not SrcDecoderOut(0)) and ( SrcDecoderOut(1)) and (not SrcDecoderOut(2)); 
+R3SrcEN<= ( SrcDecoderOut(0)) and ( SrcDecoderOut(1)) and (not SrcDecoderOut(2)); 
+
+---------------------------------------------------------------------------Enable For DST Register---------------------------------------------
+RoDstEN<= (not DstDecoderOut(0)) and (not DstDecoderOut(1)) and (not DstDecoderOut(2)); 
+R1DstEN<= (DstDecoderOut(0)) and (not DstDecoderOut(1)) and (not DstDecoderOut(2)); 
+R2DstEN<= (not DstDecoderOut(0)) and ( DstDecoderOut(1)) and (not DstDecoderOut(2)); 
+R3DstEN<= ( DstDecoderOut(0)) and ( DstDecoderOut(1)) and (not DstDecoderOut(2));
+
+-------------------------------------------------------------------------------Registers Connections--------------------------------------------
+--------Ro--------------------------------------------
+TriRoIN: tristate port map(BUS1,RoInput,RoSrcEN);
+TriRoOUT: tristate port map(RoOutput,BUS3,RoDstEN);
+Ro:nbitregister port map(RoInput,RST, Clk ,RoSrcEN,RoOutput);
+--------R1---------------------------------------------
+TriR1IN: tristate port map(BUS1,R1Input,R1SrcEN);
+TriR1OUT: tristate port map(R1Output,BUS3,R1DstEN);
+R1:nbitregister port map(R1Input,RST, Clk ,R1SrcEN,R1Output);
+--------R2-------------------------------------------------
+TriR2IN: tristate port map(BUS1,R2Input,R2SrcEN);
+TriR2OUT: tristate port map(R2Output,BUS3,R2DstEN);
+R2:nbitregister port map(R2Input,RST, Clk ,R2SrcEN,R2Output);
+--------R3--------------------------------------------------
+TriR3IN: tristate port map(BUS1,R3Input,R3SrcEN);
+TriR3OUT: tristate port map(R3Output,BUS3,R3DstEN);
+R3:nbitregister port map(R3Input,RST, Clk ,R3SrcEN,R3Output);
+---------TEMP------------------------------------------------
+TriTempIN: tristate port map(BUS1,TempInput,TEMPIN);
+TriTempOUT: tristate port map(TempOutput,BUS3,TEMPOUT);
+Temp:nbitregister port map(TempInput,RST, Clk ,TEMPIN,TempOutput);
+---------SP------------------------------------------------------
+TriSPIN: tristate port map(BUS2,SpInput,SPIN);
+TriSPOUT: tristate port map(SpOutput,BUS3,SPOUT);
+SP:nbitregister port map(SpInput,RST, Clk ,SPIN,SpOutput);
 
 
+
+
+
+
+ 
 end RegistersFileArch;

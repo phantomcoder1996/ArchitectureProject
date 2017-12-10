@@ -1,0 +1,12 @@
+MOV R2,R1
+Mov R0,(R1)+
+xx: Mov x(R2),-(R3)
+Dec R3
+INV -(R0)
+INC x(R2)
+ROL (R1)+
+BR xx
+JSR hello
+HLT
+hello: ADD R1,(R3)+
+RTS 
