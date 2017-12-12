@@ -38,6 +38,7 @@ Port
   BUS2: inout std_logic_vector(31 downto 0);
 
   BUS1: in std_logic_vector(31 downto 0);
+  RAMOUT:in std_logic_vector(31 downto 0);   ---added--
   
   MuxShiftoutput: out std_logic_vector(31 downto 0);
 
@@ -45,13 +46,53 @@ Port
   RST: in std_logic
 
 );
-
+SIGNAl MDRd,MARd,MDRq,MARq,MUXMEMOUT,SHIFEROUT,MDROUT:std_logic_vector(31 downto 0);
+SIGNAL MUXCOUT:std_logic_vector(15 DOWNTO 0);
 end Entity;
 
 Architecture MemoryInterfacingBlockArch of MemoryInterfacingBlock is
+  ------start of register component -----------
+COMPONENT nbitregister IS
+Generic(n: integer:=32);
+Port(d : in std_logic_vector(n-1 downto 0);
+     rst: in std_logic;
+     clk: in std_logic;
+     En: in std_logic;
+     q: out std_logic_vector(n-1 downto 0));
+END COMPONENT ;
+  ------end of register component--------------
+  ------start of mux component-----------------
+COMPONENT Mux2 IS
+Generic(n: integer:=16);
+Port(a:in std_logic_vector(n-1 downto 0);
+     b:in std_logic_vector(n-1 downto 0);
+     sel:in std_logic;
+     z:out std_logic_vector(n-1 downto 0)
+     );
+END COMPONENT ;
+  ------end of  mux component-----------------
+  
 begin
---TODO:
---Add mdr,mar,shifter and three multiplexers described above and 
---their connections
+
+-- get data from bus2 ------
+MARd <= BUS2;
+----------TODO : el output 3la bus 2 bta3 el mux clear ana shaia mlosh lazma  -----------
+
+-- create MDR & MAR registers 
+MDR :nbitregister GENERIC MAP(32)  PORT MAP(MDRd,RST,Clk,MDRIN,MDRq);
+MAR :nbitregister GENERIC MAP(32)  PORT MAP(MARd,RST,Clk,MARIN,MARq);
+  
+---create clear MDR mux ---------
+clear: Mux2 GENERIC MAP(16)  PORT MAP(MDRq(31 DOWNTO 16),"0000000000000000",MUXCLEAR,MUXCOUT);
+  
+---create multiplexer responsible for choosing whether MDR input is from RAM output or BUS1 -------
+mem: Mux2 GENERIC MAP(32)  PORT MAP(RAMOUT,BUS1,MUXMEM,MUXMEMOUT);
+MDRd<=MUXMEMOUT;
+MDROUT<=MUXCOUT&MDRq(15 DOWNTo 0);
+
+---create multiplexer responsible for choosing between shifted MDR output or MDR output-------------------
+choose:Mux2 GENERIC MAP(32)  PORT MAP(MDROUT,SHIFEROUT,MUXSHIFT,MuxShiftoutput);
+---create  32-bit shifter for shifting MDR-----------------------
+SHIFEROUT<="0000000000000000" & MDRq(31 DOwNTO 16);
 
 end;
