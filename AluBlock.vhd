@@ -110,7 +110,7 @@ begin
    myALU:ALU port map (XOUT,YOUT,ALUopDECODERout,ALUout,CFin,CFout);         ----------------------------check this one
 
 -------------------------------------------------------
-ZF <= '1' when ALUout='0'
+ZF<= '1' when ALUout =  (31 downto 0 => '0')
 else  '0' ;
 
 end AluBlockArch;
