@@ -1,19 +1,22 @@
-Library ieee;
+library ieee;
 use ieee.std_logic_1164.all;
 
-entity tristate is 
-Generic(n:integer :=32);
-Port(input: in std_logic_vector(n-1 downto 0);
-     output: out std_logic_vector(n-1 downto 0);
-     En: in std_logic);
+entity tristateBuffer is
 
-end entity;
+  generic (n : integer := 32);
+  port(
+       a:in std_logic_vector (31 downto 0);
+       sel:in std_logic;
+       b:out std_logic_vector (31 downto 0));
 
-Architecture tristateArchitecture of tristate is
+end tristateBuffer;
+
+
+architecture arcTristate of tristateBuffer is 
+
 begin
 
-output<= input when En='1'
-else (others=>'Z');
+b<=a when sel='1'
+else (others=>'Z') when sel='0';
 
-
-end tristateArchitecture;
+end arcTristate;
