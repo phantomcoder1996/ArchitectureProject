@@ -1,0 +1,781 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_pro/17.0
+Ealublock
+Z0 w1512831693
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/Univ/Documents/Architecure1/ProjectCode/ArchitectureProject
+Z4 8C:/Users/Univ/Documents/Architecure1/ProjectCode/AluBlock.vhd
+Z5 FC:/Users/Univ/Documents/Architecure1/ProjectCode/AluBlock.vhd
+l0
+L20
+VEjT`VB1UUT6UlB_2N3ARE1
+!s100 hhTaj3eGCnXJVC=MPQhSC1
+Z6 OV;C;10.5c;63
+32
+Z7 !s110 1513197275
+!i10b 1
+Z8 !s108 1513197274.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/AluBlock.vhd|
+Z10 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/AluBlock.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aalublockarch
+R1
+R2
+DEx4 work 8 alublock 0 22 EjT`VB1UUT6UlB_2N3ARE1
+l45
+L44
+VJBMG=YT8[A[LlhGJXlWT:0
+!s100 jWU`Yz<b??QS766A3`=iD3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebranchinstructiondecoder
+Z13 w1512835635
+R1
+R2
+R3
+Z14 8C:/Users/Univ/Documents/Architecure1/ProjectCode/BranchInstructionDecoder.vhd
+Z15 FC:/Users/Univ/Documents/Architecure1/ProjectCode/BranchInstructionDecoder.vhd
+l0
+L14
+V16dRCjWYe=Ai80Cla[;>o1
+!s100 ?Gb[Pe3KA8`30ibFcHCOM3
+R6
+32
+R7
+!i10b 1
+Z16 !s108 1513197275.000000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/BranchInstructionDecoder.vhd|
+Z18 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/BranchInstructionDecoder.vhd|
+!i113 1
+R11
+R12
+Abranchinstructiondecoderarch
+R1
+R2
+DEx4 work 24 branchinstructiondecoder 0 22 16dRCjWYe=Ai80Cla[;>o1
+l32
+L31
+VoVCdU6:K3dagE5YABoSmF0
+!s100 M>i__gGnZ_F70^haEOGS[2
+R6
+32
+R7
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R11
+R12
+Econtrolunit
+Z19 w1513362704
+R1
+R2
+R3
+Z20 8C:/Users/Univ/Documents/Architecure1/ProjectCode/ArchitectureProject/ControlUnit.vhd
+Z21 FC:/Users/Univ/Documents/Architecure1/ProjectCode/ArchitectureProject/ControlUnit.vhd
+l0
+L4
+V6lPUTG]FLMDIP_J9:cb9i1
+!s100 j:m6jRdgzbiei8lKjPEi_3
+R6
+32
+Z22 !s110 1513362715
+!i10b 1
+Z23 !s108 1513362715.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/ArchitectureProject/ControlUnit.vhd|
+Z25 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/ArchitectureProject/ControlUnit.vhd|
+!i113 1
+R11
+R12
+Acontrolunitarch
+Z26 DEx4 work 3 rom 0 22 7OED:Z__DMC:dTQE2MJQd2
+Z27 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z28 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z29 DEx4 work 20 romsequencingcircuit 0 22 5HA_7kC3hbGgWf95]=SQ<2
+Z30 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z31 DEx4 work 7 decoder 0 22 :Y?RJ2eGEci52MIVbdZbj0
+R1
+R2
+Z32 DEx4 work 11 controlunit 0 22 6lPUTG]FLMDIP_J9:cb9i1
+l102
+L88
+Z33 V7OC;kWO>4zJ7]>cgRRLk70
+Z34 !s100 P<bY^j3GGa1SbF8AY=^kz1
+R6
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R11
+R12
+Ecounter
+Z35 w1513342475
+R30
+R1
+R2
+R3
+Z36 8C:/Users/Univ/Documents/Architecure1/ProjectCode/counter.vhd
+Z37 FC:/Users/Univ/Documents/Architecure1/ProjectCode/counter.vhd
+l0
+L5
+VaG@<mbQ6GS22LYh^RK;4H0
+!s100 azjW7fb2]E;z>=47hXQc93
+R6
+32
+Z38 !s110 1513343107
+!i10b 1
+Z39 !s108 1513343106.000000
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/counter.vhd|
+Z41 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/counter.vhd|
+!i113 1
+R11
+R12
+Acounterarch
+R30
+R1
+R2
+Z42 DEx4 work 7 counter 0 22 aG@<mbQ6GS22LYh^RK;4H0
+l26
+L23
+Vmo`QZUjj[4zRf2SFKHaRW1
+!s100 Ddh_PlVEDEbJ2dU3RY8cQ3
+R6
+32
+R38
+!i10b 1
+R39
+R40
+R41
+!i113 1
+R11
+R12
+Edecoder
+Z43 w1508530396
+R30
+R1
+R2
+R3
+Z44 8C:\Users\Univ\Documents\Architecure1\ProjectCode\decoder.vhd
+Z45 FC:\Users\Univ\Documents\Architecure1\ProjectCode\decoder.vhd
+l0
+L8
+V:Y?RJ2eGEci52MIVbdZbj0
+!s100 V]7XWDRDJ3JDo`51PGEY12
+R6
+32
+Z46 !s110 1513335920
+!i10b 1
+Z47 !s108 1513335920.000000
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\Univ\Documents\Architecure1\ProjectCode\decoder.vhd|
+Z49 !s107 C:\Users\Univ\Documents\Architecure1\ProjectCode\decoder.vhd|
+!i113 1
+R11
+R12
+Adecoderarchitecture
+R30
+R1
+R2
+R31
+l20
+L19
+VW?Gn`P1WP6oMN]KD?knL40
+!s100 kT0>M5fHUmN<MMRQLQ^2;1
+R6
+32
+R46
+!i10b 1
+R47
+R48
+R49
+!i113 1
+R11
+R12
+Einstructiondecodingcircuit
+Z50 w1512832185
+R1
+R2
+R3
+Z51 8C:/Users/Univ/Documents/Architecure1/ProjectCode/InstructionDecodingCircuit.vhd
+Z52 FC:/Users/Univ/Documents/Architecure1/ProjectCode/InstructionDecodingCircuit.vhd
+l0
+L21
+Vb>gWRl:TE^T_<Odo>1fCg0
+!s100 0`@`mY:GRTnhIQXO@?ea>3
+R6
+32
+Z53 !s110 1513197276
+!i10b 1
+Z54 !s108 1513197276.000000
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/InstructionDecodingCircuit.vhd|
+Z56 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/InstructionDecodingCircuit.vhd|
+!i113 1
+R11
+R12
+Ainstructiondecodingcircuitarch
+R1
+R2
+DEx4 work 26 instructiondecodingcircuit 0 22 b>gWRl:TE^T_<Odo>1fCg0
+l42
+L41
+VQ^@0mi;O7QB_LRBeCSQ3Z2
+!s100 ml43MZojz@]kCWlW_iYQ91
+R6
+32
+R53
+!i10b 1
+R54
+R55
+R56
+!i113 1
+R11
+R12
+Eirblock
+Z57 w1512830994
+R1
+R2
+R3
+Z58 8C:/Users/Univ/Documents/Architecure1/ProjectCode/IRwithConnections.vhd
+Z59 FC:/Users/Univ/Documents/Architecure1/ProjectCode/IRwithConnections.vhd
+l0
+L12
+VKziY^HOcH6B0choj6o9hR3
+!s100 bnc^<64WZQ_NoOnPR7BUL3
+R6
+32
+R53
+!i10b 1
+R54
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/IRwithConnections.vhd|
+Z61 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/IRwithConnections.vhd|
+!i113 1
+R11
+R12
+Airblockarch
+R1
+R2
+DEx4 work 7 irblock 0 22 KziY^HOcH6B0choj6o9hR3
+l32
+L31
+VgVdjMeBFNnH[_NbQ4Dl:f2
+!s100 A8EFid[A1RMbjSKYnNYJT0
+R6
+32
+R53
+!i10b 1
+R54
+R60
+R61
+!i113 1
+R11
+R12
+Ememoryinterfacingblock
+Z62 w1512835478
+R1
+R2
+R3
+Z63 8C:/Users/Univ/Documents/Architecure1/ProjectCode/MemoryInterfacingCircuit.vhd
+Z64 FC:/Users/Univ/Documents/Architecure1/ProjectCode/MemoryInterfacingCircuit.vhd
+l0
+L25
+V=TPM2lPCY88_h<SUk;Y>l1
+!s100 OeS2]G_Om28k^00UZ`?2E2
+R6
+32
+R53
+!i10b 1
+R54
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/MemoryInterfacingCircuit.vhd|
+Z66 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/MemoryInterfacingCircuit.vhd|
+!i113 1
+R11
+R12
+Amemoryinterfacingblockarch
+R1
+R2
+DEx4 work 22 memoryinterfacingblock 0 22 =TPM2lPCY88_h<SUk;Y>l1
+l52
+L51
+VYWE2Ej;R_a0U@Gae?5[fz1
+!s100 I^MDzB6BkMOIN>`QDMYMj2
+R6
+32
+R53
+!i10b 1
+R54
+R65
+R66
+!i113 1
+R11
+R12
+Emux2
+Z67 w1508526313
+R1
+R2
+R3
+Z68 8C:/Users/Univ/Documents/Architecure1/ProjectCode/mux2.vhd
+Z69 FC:/Users/Univ/Documents/Architecure1/ProjectCode/mux2.vhd
+l0
+L4
+V[nVBCPAczd<@ffdllcCbl0
+!s100 QeZWE556O;>KzhAPMG31R1
+R6
+32
+Z70 !s110 1513197278
+!i10b 1
+Z71 !s108 1513197278.000000
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/mux2.vhd|
+Z73 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/mux2.vhd|
+!i113 1
+R11
+R12
+Amux2arch
+R1
+R2
+Z74 DEx4 work 4 mux2 0 22 [nVBCPAczd<@ffdllcCbl0
+l17
+L16
+V0a2^R;n_[L<8_5;nc0[381
+!s100 OGP^GCZF<H2z4fG?Xk_2R0
+R6
+32
+R70
+!i10b 1
+R71
+R72
+R73
+!i113 1
+R11
+R12
+Emux4
+Z75 w1513200398
+R1
+R2
+R3
+Z76 8C:\Users\Univ\Documents\Architecure1\ProjectCode\ArchitectureProject\mux4.vhd
+Z77 FC:\Users\Univ\Documents\Architecure1\ProjectCode\ArchitectureProject\mux4.vhd
+l0
+L5
+Vd__c?[VmkUjNfd?FMiIPm3
+!s100 jAMPln9JLn;2Qf1zUAaG:1
+R6
+32
+Z78 !s110 1513200721
+!i10b 1
+Z79 !s108 1513200721.000000
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\Univ\Documents\Architecure1\ProjectCode\ArchitectureProject\mux4.vhd|
+Z81 !s107 C:\Users\Univ\Documents\Architecure1\ProjectCode\ArchitectureProject\mux4.vhd|
+!i113 1
+R11
+R12
+Amux4arch
+R1
+R2
+Z82 DEx4 work 4 mux4 0 22 d__c?[VmkUjNfd?FMiIPm3
+l20
+L19
+VjOS?9[h24MS`jl4mXmXOi1
+!s100 1czliz7d3]Vd=^kh^IIP]1
+R6
+32
+R78
+!i10b 1
+R79
+R80
+R81
+!i113 1
+R11
+R12
+Enbitregister
+Z83 w1507062918
+R1
+R2
+R3
+Z84 8C:/Users/Univ/Documents/Architecure1/ProjectCode/register.vhd
+Z85 FC:/Users/Univ/Documents/Architecure1/ProjectCode/register.vhd
+l0
+L4
+V7ajjWMKL2IQJ;YgCCB2<Z2
+!s100 EEThZ6J92o=GZ@@<7[lj22
+R6
+32
+R70
+!i10b 1
+R71
+Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/register.vhd|
+Z87 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/register.vhd|
+!i113 1
+R11
+R12
+Anbitregister_architecture
+R1
+R2
+Z88 DEx4 work 12 nbitregister 0 22 7ajjWMKL2IQJ;YgCCB2<Z2
+l16
+L15
+V<W6=g1gzW>M@ZM;>1MmOh0
+!s100 TjCk_k?7SfF55I6b:KbCC3
+R6
+32
+R70
+!i10b 1
+R71
+R86
+R87
+!i113 1
+R11
+R12
+Epcblock
+Z89 w1512823052
+R1
+R2
+R3
+Z90 8C:/Users/Univ/Documents/Architecure1/ProjectCode/PCBlock.vhd
+Z91 FC:/Users/Univ/Documents/Architecure1/ProjectCode/PCBlock.vhd
+l0
+L4
+VY:7Y;Da@W5IIj1GWLbUm32
+!s100 >Sef4_cEd>3Z6aR4QZb161
+R6
+32
+Z92 !s110 1513197277
+!i10b 1
+Z93 !s108 1513197277.000000
+Z94 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/PCBlock.vhd|
+Z95 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/PCBlock.vhd|
+!i113 1
+R11
+R12
+Apcblockarch
+R30
+Z96 DEx4 work 12 pccalculator 0 22 ?PmS0G;B<@[BJ`FmDM6zL2
+R74
+Z97 DEx4 work 8 tristate 0 22 Xl6OnkScR6aN^Dg@eLOOO2
+R88
+R1
+R2
+Z98 DEx4 work 7 pcblock 0 22 Y:7Y;Da@W5IIj1GWLbUm32
+l33
+L25
+V=7n?YE5e65L96:n<]jAfK2
+!s100 YT`F;bo0ZT=Ql^TGWQYmZ1
+R6
+32
+R92
+!i10b 1
+R93
+R94
+R95
+!i113 1
+R11
+R12
+Epcblock_tb
+Z99 w1512829685
+R1
+R2
+R3
+Z100 8C:/Users/Univ/Documents/Architecure1/ProjectCode/PCBlock_TB.vhd
+Z101 FC:/Users/Univ/Documents/Architecure1/ProjectCode/PCBlock_TB.vhd
+l0
+L4
+V_UWMk5=7FeUCDPCB;0[EE3
+!s100 >E7QP?TI<Mi>Y]62j5o<n1
+R6
+32
+R70
+!i10b 1
+R71
+Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/PCBlock_TB.vhd|
+Z103 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/PCBlock_TB.vhd|
+!i113 1
+R11
+R12
+Apcblock_tbarch
+R98
+R1
+R2
+DEx4 work 10 pcblock_tb 0 22 _UWMk5=7FeUCDPCB;0[EE3
+l24
+L11
+V?c=UKg`1EA@R4;]9H4Q@Q2
+!s100 jWVH7j]B6_kjg2oK7?a?R1
+R6
+32
+R70
+!i10b 1
+R71
+R102
+R103
+!i113 1
+R11
+R12
+Epccalculator
+Z104 w1512821074
+R30
+R1
+R2
+R3
+Z105 8C:/Users/Univ/Documents/Architecure1/ProjectCode/pccalculator.vhd
+Z106 FC:/Users/Univ/Documents/Architecure1/ProjectCode/pccalculator.vhd
+l0
+L5
+V?PmS0G;B<@[BJ`FmDM6zL2
+!s100 MZzNigBS>JY?XEL`5A0QP1
+R6
+32
+R70
+!i10b 1
+R71
+Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/pccalculator.vhd|
+Z108 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/pccalculator.vhd|
+!i113 1
+R11
+R12
+Apccalculatorarch
+R30
+R1
+R2
+R96
+l21
+L18
+VIJmI^DlEG^m4BV[LVo[d]0
+!s100 [iROMbE2JQnid^:B7UU882
+R6
+32
+R70
+!i10b 1
+R71
+R107
+R108
+!i113 1
+R11
+R12
+Eram
+Z109 w1511287782
+R30
+R1
+R2
+R3
+Z110 8C:/Users/Univ/Documents/Architecure1/ProjectCode/ram.vhd
+Z111 FC:/Users/Univ/Documents/Architecure1/ProjectCode/ram.vhd
+l0
+L5
+VJ4eW0Pz@5^TI>9YI:E=<;2
+!s100 PXEbdbP5LRQT2M:e::_@_3
+R6
+32
+R92
+!i10b 1
+R93
+Z112 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/ram.vhd|
+Z113 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/ram.vhd|
+!i113 1
+R11
+R12
+Asyncrama
+R30
+R1
+R2
+DEx4 work 3 ram 0 22 J4eW0Pz@5^TI>9YI:E=<;2
+l19
+L14
+VG_1<RFkRfi=>P3UKjOLIQ3
+!s100 mg]hmW8]>2N=KT;HMCVd[2
+R6
+32
+R92
+!i10b 1
+R93
+R112
+R113
+!i113 1
+R11
+R12
+Eregistersfile
+Z114 w1512835823
+R1
+R2
+R3
+Z115 8C:/Users/Univ/Documents/Architecure1/ProjectCode/RegistersFile.vhd
+Z116 FC:/Users/Univ/Documents/Architecure1/ProjectCode/RegistersFile.vhd
+l0
+L12
+V3hK5Q731>KY6_:F]5g1Ti1
+!s100 9b2zN9PcmSZZaJ5WY?@_^3
+R6
+32
+R92
+!i10b 1
+R93
+Z117 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/RegistersFile.vhd|
+Z118 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/RegistersFile.vhd|
+!i113 1
+R11
+R12
+Aregistersfilearch
+R1
+R2
+DEx4 work 13 registersfile 0 22 3hK5Q731>KY6_:F]5g1Ti1
+l39
+L38
+VF4a6e7hR7M<N3H^7A[fb10
+!s100 R`7aI=nze@fULF]1NQ^DN3
+R6
+32
+R92
+!i10b 1
+R93
+R117
+R118
+!i113 1
+R11
+R12
+Erom
+Z119 w1513362695
+R30
+R1
+R2
+R3
+Z120 8C:/Users/Univ/Documents/Architecure1/ProjectCode/rom.vhd
+Z121 FC:/Users/Univ/Documents/Architecure1/ProjectCode/rom.vhd
+l0
+L4
+V7OED:Z__DMC:dTQE2MJQd2
+!s100 KQBQYZ3C9TWz?Ln9W0h_40
+R6
+32
+Z122 !s110 1513362706
+!i10b 1
+Z123 !s108 1513362706.000000
+Z124 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/rom.vhd|
+Z125 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/rom.vhd|
+!i113 1
+R11
+R12
+Aromarch
+R30
+R1
+R2
+R26
+l120
+L15
+V^X4?NnP;Ya3OY;;AHedmZ3
+!s100 C1m5h3`UCZF@8WG9Ffg101
+R6
+32
+R122
+!i10b 1
+R123
+R124
+R125
+!i113 1
+R11
+R12
+Eromsequencingcircuit
+Z126 w1513355360
+R27
+R28
+R1
+R2
+R3
+Z127 8C:/Users/Univ/Documents/Architecure1/ProjectCode/RomSequencingCircuit.vhd
+Z128 FC:/Users/Univ/Documents/Architecure1/ProjectCode/RomSequencingCircuit.vhd
+l0
+L19
+V5HA_7kC3hbGgWf95]=SQ<2
+!s100 [7B[gn=<GgRfl8ED8FU0P0
+R6
+32
+Z129 !s110 1513355363
+!i10b 1
+Z130 !s108 1513355363.000000
+Z131 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/RomSequencingCircuit.vhd|
+Z132 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/RomSequencingCircuit.vhd|
+!i113 1
+R11
+R12
+Aromsequencingcircuitarch
+R82
+R74
+R30
+R42
+R27
+R28
+R1
+R2
+R29
+l75
+L41
+VlPn3CZIXN5iRcTgYHfMjJ0
+!s100 h3eIg>1RI`;o5HZYg9Kan3
+R6
+32
+R129
+!i10b 1
+R130
+R131
+R132
+!i113 1
+R11
+R12
+Etristate
+Z133 w1507051996
+R1
+R2
+R3
+Z134 8C:/Users/Univ/Documents/Architecure1/ProjectCode/tristatebuffer.vhd
+Z135 FC:/Users/Univ/Documents/Architecure1/ProjectCode/tristatebuffer.vhd
+l0
+L4
+VXl6OnkScR6aN^Dg@eLOOO2
+!s100 XUnPGdd8`R_aASPNDZUh62
+R6
+32
+R70
+!i10b 1
+R71
+Z136 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Univ/Documents/Architecure1/ProjectCode/tristatebuffer.vhd|
+Z137 !s107 C:/Users/Univ/Documents/Architecure1/ProjectCode/tristatebuffer.vhd|
+!i113 1
+R11
+R12
+Atristatearchitecture
+R1
+R2
+R97
+l13
+L12
+Vb4IaRnfKggPj0=`OPPHVS1
+!s100 B1M22mX@8VF=ZjdaAi`gK3
+R6
+32
+R70
+!i10b 1
+R71
+R136
+R137
+!i113 1
+R11
+R12

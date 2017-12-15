@@ -29,13 +29,15 @@ RSRCEN: in std_logic;
 RDSTEN: in std_logic;
 PLAout: in std_logic;
 ALUEN:  in std_logic;
+  
 
 srcDecoderOutput :out std_logic_vector(3 downto 0);
 dstDecoderOutput :out std_logic_vector(3 downto 0);
-aluDecoderOutput :out std_logic_vector(15 downto 0);
+aluDecoderOutput :out std_logic_vector(24 downto 0);
 PLAoutput: out std_logic_vector(7 downto 0);
 
-IRinput: in std_logic_vector(15 downto 0)
+IRinput: in std_logic_vector(15 downto 0);
+CW: in std_logic_vector(22 downto 0)
 );
 
 end Entity;
@@ -61,6 +63,11 @@ end component;
 
 
 Signal SRCDecoderInput,DSTDecoderInput:std_logic_vector(1 downto 0);
+Signal twoOPout,oneOPout:std_logic_vector(15 downto 0);
+Signal specialOUT:std_logic_vector(7 downto 0);
+Signal twoOP,oneOP:std_logic_vector(24 downto 0);
+signal enSPdec,enOneOP,enTwoOP:std_logic;
+--------------------------------------------------------------------change 1
 
 begin
 
@@ -70,7 +77,25 @@ begin
 
 -------------------------------------------------ALU Decoding------------------------------------------------------------------------------
 
-ALUDecoder:decoder generic map (n   => 4) port map(ALUEN,IRinput(13 downto 10),aluDecoderOutput);
+enSPdec<= CW(5) or CW(4) or CW(3);
+enOneOP<= ALUEN and  IRinput(14) and (not IRinput(15));
+enTwoOP<= ALUEN and  (not IRinput(14)) and (not IRinput(15));
+
+twoOPdec:decoder generic map (n   => 4) port map(enTwoOP,IRinput(13 downto 10), twoOPout);
+oneOPdec:decoder generic map (n   => 4) port map(enOneOP,IRinput(13 downto 10), oneOPout);
+specialOP:decoder generic map (n  => 3) port map(enSPdec,CW(5 downto 3), specialOUT);
+
+aluDecoderOutput (24 downto 14) <= oneOPout(10 downto 0);  ------------------------------------------ change2
+aluDecoderOutput (13 downto 4 ) <= twoOPout(9 downto 0);   ------------------------------------------  change3
+
+ 
+aluDecoderOutput(0)<= specialOUT(2) ;
+aluDecoderOutput(1)<= specialOUT(3);
+aluDecoderOutput(2)<= specialOUT(5);
+aluDecoderOutput(3)<= specialOUT(6);
+aluDecoderOutput(4)<= twoOPout(0) or specialOUT(4); ------------------------------------------------change4
+
+
 -------------------------------------------------SRC---------------------------------------------------------------------------------------
 
 SRCMUX: MUX2 generic map (n   => 2)  port map(IRinput(9 downto 8),IRinput(5 downto 4),SRCEND,SRCDecoderInput);
