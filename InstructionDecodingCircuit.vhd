@@ -66,7 +66,7 @@ Signal twoOPout,oneOPout:std_logic_vector(15 downto 0);
 Signal specialOUT:std_logic_vector(7 downto 0);
 Signal twoOP,oneOP:std_logic_vector(24 downto 0);
 signal enSPdec,enOneOP,enTwoOP:std_logic;
-signal tempaluDecoderOutput:std_logic_vector(24 downto 0);
+--------------------------------------------------------------------change 1
 
 begin
 
@@ -84,15 +84,15 @@ twoOPdec:decoder generic map (n   => 4) port map(enTwoOP,IRinput(13 downto 10), 
 oneOPdec:decoder generic map (n   => 4) port map(enOneOP,IRinput(13 downto 10), oneOPout);
 specialOP:decoder generic map (n  => 3) port map(enSPdec,CW(5 downto 3), specialOUT);
 
-tempaluDecoderOutput (24 downto 14) <= oneOPout(10 downto 0);
-tempaluDecoderOutput (13 downto 4 ) <= twoOPout(9 downto 0);
+aluDecoderOutput (24 downto 14) <= oneOPout(10 downto 0);  ------------------------------------------ change2
+aluDecoderOutput (13 downto 4 ) <= twoOPout(9 downto 0);   ------------------------------------------  change3
 
  
 aluDecoderOutput(0)<= specialOUT(2) ;
 aluDecoderOutput(1)<= specialOUT(3);
 aluDecoderOutput(2)<= specialOUT(5);
 aluDecoderOutput(3)<= specialOUT(6);
-aluDecoderOutput(4)<= tempaluDecoderOutput(4) or specialOUT(4);
+aluDecoderOutput(4)<= twoOPout(0) or specialOUT(4); ------------------------------------------------change4
 
 
 -------------------------------------------------SRC---------------------------------------------------------------------------------------
