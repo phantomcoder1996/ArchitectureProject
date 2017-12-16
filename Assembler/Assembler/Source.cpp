@@ -93,11 +93,16 @@ string decode_reg(string src, string s,int mode  ) //mod e=0 2 ops i want to fet
 		std::stringstream stream;
 		stream << std::hex << cnt_num_code_line;
 		std::string result(stream.str());
+		
+		if (result.size()==1)
+			xxx += "  ";
+		else if (result.size()==2 )
+			xxx += " ";
 		xxx += result;
 		xxx += ':';
 		xxx += ' ';
 
-
+	
 		xxx += bitset<16>(x).to_string();
 		xxx += "\n";
 		cnt_num_code_line += 1;
@@ -155,6 +160,12 @@ string decode_reg_1_op(string src, string s)
 		std::stringstream stream;
 		stream << std::hex << cnt_num_code_line;
 		std::string result(stream.str());
+		if (result.size() == 1)
+			xxx += "  ";
+		else if (result.size() == 2)
+			xxx += " ";
+		
+
 		xxx += result;
 		xxx += ':';
 		xxx += ' ';
@@ -171,6 +182,11 @@ void decode_2ops(int x, string s)
 	std::stringstream stream;
 	stream << std::hex << cnt_num_code_line;
 	std::string result(stream.str());
+	if (result.size() == 1)
+		output += "  ";
+	else if (result.size() == 2)
+		output += " ";
+
 	output += result;
 	output += ':';
 	output += ' ';
@@ -194,6 +210,10 @@ void decode_1op(int x, string s)
 	std::stringstream stream;
 	stream << std::hex << cnt_num_code_line;
 	std::string result(stream.str());
+	if (result.size() == 1)
+		output += "  ";
+	else if (result.size() == 2)
+		output += " ";
 	output += result;
 	output += ':';
 	output += ' ';
@@ -217,6 +237,10 @@ void decode_br(int x,string s)
 	std::stringstream stream;
 	stream << std::hex << cnt_num_code_line;
 	std::string result(stream.str());
+	if (result.size() == 1)
+		output += "  ";
+	else if (result.size() == 2)
+		output += " ";
 	output += result;
 	output += ':';
 	output += ' ';
@@ -227,9 +251,9 @@ void decode_br(int x,string s)
 	for (int i = 0; i < branches.size(); i++)
 	{
 		int dis = finddd(s, branches[i].first);
-		if (dis != 0)
+		if (dis != -1)
 		{ 
-			int offset = branches[i].second +1 - x;
+			int offset = x- (branches[i].second + 1);
 			//offset = -offset;
 			std::string ss = std::bitset< 11 >(offset).to_string();
 			output += ss;
@@ -237,6 +261,7 @@ void decode_br(int x,string s)
 		}
 
 	}
+	
 	output += '\n';
 }
 void decode_noop(int x, string s)
@@ -244,6 +269,10 @@ void decode_noop(int x, string s)
 	std::stringstream stream;
 	stream << std::hex << cnt_num_code_line;
 	std::string result(stream.str());
+	if (result.size() == 1)
+		output += "  ";
+	else if (result.size() == 2)
+		output += " ";
 	output += result;
 	output += ':';
 	output += ' ';
@@ -261,6 +290,10 @@ void decode_jsr(int x, string s)
 	std::stringstream stream;
 	stream << std::hex << cnt_num_code_line;
 	std::string result(stream.str());
+	if (result.size() == 1)
+		output += "  ";
+	else if (result.size() == 2)
+		output += " ";
 	output += result;
 	output += ':';
 	output += ' ';
@@ -289,16 +322,12 @@ void decode_jsr(int x, string s)
 /////////////////////////handle data input
 int main()
 {
-	string mov_code = "001";
-	string Register = "00";
-	string Auto_increment = "01";
-	string Auto_decrement = "10";
-	string Indexed = "11";
-	
-
-	
-
-	
+	string init = "";
+	string init1 = "";
+	string init2 = "";
+	init += '/'; init += '/'; init +=" memory data file (do not edit the following line - required for mem load use)\n";
+	init1 += '/'; init1 += '/'; init1 +=" instance=/ram/ram\n";
+	init2 += '/'; init2 += '/'; init2 +=" format=mti addressradix=h dataradix=b version=1.0 wordsperline=1\n";
 	int cnt = 0;
 	string line;
 	ifstream myfile("Input.txt");
@@ -348,15 +377,23 @@ int main()
 	{
 		string s = v[i];
 		string h = "";
-		xxx = "";
-		h += ':';
-		int dis= finddd(s, h);
+		 h += ':';
+		int dis = finddd(s, h);
 		if (dis != -1)
 		{
-			string br= s.substr(0, dis);
-			s = s.substr(br.size()+2, s.size());
-			branches.push_back({br,i});
+			string br = s.substr(0, dis);
+			s = s.substr(br.size() + 2, s.size());
+			branches.push_back({ br,i });
 		}
+
+
+	}
+	for (int i = 0; i < v.size(); i++)
+	{
+		string s = v[i];
+		//string h = "";
+		xxx = "";
+	
 		bool fnd_2op = false;
 		bool fnd_1op = false;
 		bool fnd_branch = false;
@@ -433,16 +470,26 @@ int main()
 			std::stringstream stream;
 			stream << std::hex << i;
 			std::string result(stream.str());
+			if (result.size() == 1)
+				data_output += "  ";
+			else if (result.size() == 2)
+				data_output += " ";
 			data_output += result;
+			
 			data_output += ':';
 			data_output += ' ';
-			
-			data_output += '\n'; }
+			data_output += "UUUUUUUUUUUUUUUU";
+			data_output += '\n'; 
+		}
 		else if (i == data_v[cnnt].first)
 		{
 			std::stringstream stream;
 			stream << std::hex << i;
 			std::string result(stream.str());
+			if (result.size() == 1)
+				data_output += "  ";
+			else if (result.size() == 2)
+				data_output += " ";
 			data_output += result;
 			data_output += ':';
 			data_output += ' ';
@@ -453,10 +500,28 @@ int main()
 		}
 
 	}
-	ofstream myfile1("output.txt");
+	for (int i = cnt_num_code_line + data_v.size(); i <= 2047; i++)
+	{
+		std::stringstream stream;
+		stream << std::hex << i;
+		std::string result(stream.str());
+		if (result.size() == 1)
+			data_output += "  ";
+		else if (result.size() == 2)
+			data_output += " ";
+		data_output += result;
+
+		data_output += ':';
+		data_output += ' ';
+		data_output += "UUUUUUUUUUUUUUUU";
+		data_output += '\n';
+	}
+	ofstream myfile1("output.mem");
 	if (myfile1.is_open())
 	{
-		
+		myfile1 << init;
+		myfile1 << init1;
+		myfile1 << init2;
 		myfile1 << output;
 		myfile1 << data_output;
 		myfile1.close();

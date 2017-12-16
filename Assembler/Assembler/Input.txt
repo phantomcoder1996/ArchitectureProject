@@ -6,14 +6,16 @@ INV -(R0)
 INC 11(R2)
 ROL (R1)+
 BR xx
+BHI ll
 JSR hello
+ll: INV -(R1)
 HLT
 hello: ADD R1,(R3)+
 ADD 5(R1),20(R2)
 RTS 
 
-18 1155
-19 2222
-20 4444
-22 22
-25 3333
+22 10
+25 6
+26 44
+30 22
+35 30
