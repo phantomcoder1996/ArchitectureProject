@@ -1,2 +1,10 @@
-﻿  Assembler.vcxproj -> c:\users\extra\documents\visual studio 2015\Projects\Assembler\Debug\Assembler.exe
-  Assembler.vcxproj -> c:\users\extra\documents\visual studio 2015\Projects\Assembler\Debug\Assembler.pdb (Full PDB)
+﻿  Source.cpp
+c:\users\extra\documents\visual studio 2015\projects\assembler\assembler\source.cpp(85): warning C4018: '<': signed/unsigned mismatch
+c:\users\extra\documents\visual studio 2015\projects\assembler\assembler\source.cpp(149): warning C4018: '<': signed/unsigned mismatch
+c:\users\extra\documents\visual studio 2015\projects\assembler\assembler\source.cpp(227): warning C4018: '<': signed/unsigned mismatch
+c:\users\extra\documents\visual studio 2015\projects\assembler\assembler\source.cpp(271): warning C4018: '<': signed/unsigned mismatch
+c:\users\extra\documents\visual studio 2015\projects\assembler\assembler\source.cpp(315): warning C4018: '<': signed/unsigned mismatch
+c:\users\extra\documents\visual studio 2015\projects\assembler\assembler\source.cpp(324): warning C4018: '<': signed/unsigned mismatch
+c:\users\extra\documents\visual studio 2015\projects\assembler\assembler\source.cpp(347): warning C4018: '<': signed/unsigned mismatch
+  Assembler.vcxproj -> C:\Users\extra\Documents\Visual Studio 2015\Projects\Assembler\Debug\Assembler.exe
+  Assembler.vcxproj -> C:\Users\extra\Documents\Visual Studio 2015\Projects\Assembler\Debug\Assembler.pdb (Full PDB)

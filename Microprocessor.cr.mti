@@ -111,14 +111,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Compiling entity tristate
 -- Compiling architecture tristateArchitecture of tristate
 
-} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/register.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/register.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity nbitregister
--- Compiling architecture nbitregister_architecture of nbitregister
-
 } {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/pccalculator.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/pccalculator.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
 -- Loading package STANDARD
@@ -127,6 +119,30 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Loading package NUMERIC_STD
 -- Compiling entity PcCalculator
 -- Compiling architecture PcCalculatorArch of PcCalculator
+
+} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/register.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/register.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity nbitregister
+-- Compiling architecture nbitregister_architecture of nbitregister
+
+} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/BranchInstructionDecoder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/BranchInstructionDecoder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity BranchInstructionDecoder
+-- Compiling architecture BranchInstructionDecoderArch of BranchInstructionDecoder
+
+} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/MemoryInterfacingCircuit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/MemoryInterfacingCircuit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MemoryInterfacingBlock
+-- Compiling architecture MemoryInterfacingBlockArch of MemoryInterfacingBlock
 
 } {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/rom.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/rom.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
@@ -137,22 +153,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Compiling entity ROM
 -- Compiling architecture ROMArch of ROM
 
-} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/MemoryInterfacingCircuit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/MemoryInterfacingCircuit.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity MemoryInterfacingBlock
--- Compiling architecture MemoryInterfacingBlockArch of MemoryInterfacingBlock
-
-} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/BranchInstructionDecoder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/BranchInstructionDecoder.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity BranchInstructionDecoder
--- Compiling architecture BranchInstructionDecoderArch of BranchInstructionDecoder
-
 } {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/ArchitectureProject/mux4.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\Univ\Documents\Architecure1\ProjectCode\ArchitectureProject\mux4.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
 -- Loading package STANDARD
@@ -160,14 +160,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Loading package std_logic_1164
 -- Compiling entity Mux4
 -- Compiling architecture Mux4Arch of Mux4
-
-} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/RegistersFile.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/RegistersFile.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity RegistersFile
--- Compiling architecture RegistersFileArch of RegistersFile
 
 } {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/ram.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/ram.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
@@ -177,5 +169,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Loading package NUMERIC_STD
 -- Compiling entity ram
 -- Compiling architecture syncrama of ram
+
+} {} {}} C:/Users/Univ/Documents/Architecure1/ProjectCode/RegistersFile.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Univ/Documents/Architecure1/ProjectCode/RegistersFile.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity RegistersFile
+-- Compiling architecture RegistersFileArch of RegistersFile
 
 } {} {}}
